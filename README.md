@@ -154,4 +154,4 @@ jobs:
 Siga as melhores práticas de desenvolvimento e execute os testes antes de enviar pull requests.
 
 ## Autor
-Guide by Glaucio
+Guide by Glaucio - 2026
