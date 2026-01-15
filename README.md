@@ -83,12 +83,8 @@ Para configurar CI/CD, crie um arquivo `.github/workflows/ci.yml` no repositóri
 ```yaml
 name: E2E Testes Robot
 on:
-  push:
-    branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
   workflow_dispatch:
-    
+
 jobs:
   test:
     timeout-minutes: 60
@@ -97,21 +93,21 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v5
 
-    - name: Install Node.js
+    - name: Install Node
       uses: actions/setup-node@v4
       with:
-        node-version: '22'
+        node-version: 22
         cache: 'npm'
 
     - name: Install dependencies WebApp
-      run: npm install
+      run: npm install -g wait-on
       
     - name: Set up Python
       uses: actions/setup-python@v6
       with:
-        python-version: '3.14'
+        python-version: '3.13'
 
-    - name: Install dependencies Testes
+    - name: Install dependencies Tests
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
@@ -119,16 +115,23 @@ jobs:
     - name: Browser install lib init
       run: rfbrowser init
 
+    - name: Install Serve
+      run: npm install -g serve
+
     - name: Run WeApp
-      run: npm start &
+      run: npm start & 
+           sleep 15
       env:
         CI: true
+        
+    - name: Check if Port 3000 is active
+      run: netstat -tulpn | grep 3000 || echo "Porta 3000 não está ativa ainda"
 
-    - name: Wait for WebApp to be ready
-      run: npx wait-on http://localhost:3000  --timeout=60000
+    - name: Wait for WebApp
+      run: npx wait-on http://localhost:3000 --timeout 600000 --verbose
 
     - name: Run E2E Tests Robot Framework
-      run: robot -d ./logs robot/tests/
+      run: robot -d ./logs robot/tests
 
     - name: Publish Test Results
       uses: actions/upload-artifact@v4
@@ -154,4 +157,4 @@ jobs:
 Siga as melhores práticas de desenvolvimento e execute os testes antes de enviar pull requests.
 
 ## Autor
-Guide by Glaucio - 2026
+Guide by Glaucio
