@@ -81,30 +81,61 @@ robot --include smoke robot/tests/
 ## Integração Contínua com GitHub Actions
 Para configurar CI/CD, crie um arquivo `.github/workflows/ci.yml` no repositório com conteúdo similar a:
 ```yaml
-name: CI
-
-on: [push, pull_request]
-
+name: E2E Testes Robot
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+    
 jobs:
   test:
+    timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Setup Python
-      uses: actions/setup-python@v2
+    - name: Checkout code
+      uses: actions/checkout@v5
+
+    - name: Install Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22'
+        cache: 'npm'
+
+    - name: Install dependencies WebApp
+      run: npm install
+      
+    - name: Set up Python
+      uses: actions/setup-python@v6
       with:
         python-version: '3.14'
-    - name: Install dependencies
+
+    - name: Install dependencies Testes
       run: |
+        python -m pip install --upgrade pip
         pip install -r requirements.txt
-        rfbrowser init
-    - name: Run tests
-      run: robot --outputdir results robot/tests/
-    - name: Upload results
-      uses: actions/upload-artifact@v2
+    
+    - name: Browser install lib init
+      run: rfbrowser init
+
+    - name: Run WeApp
+      run: npm start &
+      env:
+        CI: true
+
+    - name: Wait for WebApp to be ready
+      run: npx wait-on http://localhost:3000  --timeout=60000
+
+    - name: Run E2E Tests Robot Framework
+      run: robot -d ./logs robot/tests/
+
+    - name: Publish Test Results
+      uses: actions/upload-artifact@v4
+      if: always()
       with:
-        name: test-results
-        path: results/
+        name: robot-test-results
+        path: logs/
 ```
 
 ## Estrutura do Projeto
