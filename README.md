@@ -81,9 +81,14 @@ robot --include smoke robot/tests/
 ## Integração Contínua com GitHub Actions
 Para configurar CI/CD, crie um arquivo `.github/workflows/ci.yml` no repositório com conteúdo similar a:
 ```yaml
-name: E2E Testes Robot
+nname: E2E Testes Robot
 on:
   workflow_dispatch:
+    inputs:
+      browser:
+        description: 'Escolha o navegador para os testes (chromium, firefox, webkit)'
+        required: true
+        default: 'chromium'
 
 jobs:
   test:
@@ -131,13 +136,13 @@ jobs:
       run: npx wait-on http://localhost:3000 --timeout 600000 --verbose
 
     - name: Run E2E Tests Robot Framework
-      run: robot -d ./logs robot/tests
+      run: robot -d ./logs -v BROWSER:${{ github.event.inputs.browser }} robot/tests
 
     - name: Publish Test Results
       uses: actions/upload-artifact@v4
       if: always()
       with:
-        name: robot-test-results
+        name: robot-test-results-${{ github.event.inputs.browser }}
         path: logs/
 ```
 
