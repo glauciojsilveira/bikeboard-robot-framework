@@ -35,7 +35,7 @@ jobs:
         pip install -r requirements.txt
     
     - name: Browser install lib init
-      run: rfbrowser init
+      run: rfbrowser init --with-deps
 
     - name: Install Serve
       run: npm install -g serve
