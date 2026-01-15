@@ -81,7 +81,7 @@ robot --include smoke robot/tests/
 ## Integração Contínua com GitHub Actions
 Para configurar CI/CD, crie um arquivo `.github/workflows/ci.yml` no repositório com conteúdo similar a:
 ```yaml
-nname: E2E Testes Robot
+name: E2E Testes Robot
 on:
   workflow_dispatch:
     inputs:
@@ -89,6 +89,10 @@ on:
         description: 'Escolha o navegador para os testes (chromium, firefox, webkit)'
         required: true
         default: 'chromium'
+      base_url:
+        description: 'Escolha o ambiente de testes (local, homolog, production)'
+        required: true
+        default: 'http://localhost:3000'
 
 jobs:
   test:
@@ -117,8 +121,13 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     
-    - name: Browser install lib init
+    - name: Browser install lib init (Chromium / firefox)
       run: rfbrowser init
+      if: ${{ github.event.inputs.browser != 'webkit' }}
+    
+    - name: Browser install lib init (Webkit)
+      run: rfbrowser init --with-deps
+      if: ${{ github.event.inputs.browser == 'webkit' }}  
 
     - name: Install Serve
       run: npm install -g serve
@@ -133,10 +142,10 @@ jobs:
       run: netstat -tulpn | grep 3000 || echo "Porta 3000 não está ativa ainda"
 
     - name: Wait for WebApp
-      run: npx wait-on http://localhost:3000 --timeout 600000 --verbose
+      run: npx wait-on ${{ github.event.inputs.base_url }} --timeout 600000 --verbose
 
     - name: Run E2E Tests Robot Framework
-      run: robot -d ./logs -v BROWSER:${{ github.event.inputs.browser }} robot/tests
+      run: robot -d ./logs -v BROWSER:${{ github.event.inputs.browser }} -v BASE_URL:${{ github.event.inputs.base_url }} robot/tests
 
     - name: Publish Test Results
       uses: actions/upload-artifact@v4
