@@ -34,8 +34,13 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     
-    - name: Browser install lib init
+    - name: Browser install lib init (Chromium / firefox)
+      run: rfbrowser init
+      if: ${{ github.event.inputs.browser != 'webkit' }}
+    
+    - name: Browser install lib init (Webkit)
       run: rfbrowser init --with-deps
+      if: ${{ github.event.inputs.browser == 'webkit' }}  
 
     - name: Install Serve
       run: npm install -g serve
