@@ -1,0 +1,1326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-01-15T12:35:09.580251" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\TestBeyondQA\OnClicTest\bikeboard-robot\robot\tests">
+<suite id="s1-s1" name="Ads" source="C:\TestBeyondQA\OnClicTest\bikeboard-robot\robot\tests\ads.robot">
+<test id="s1-s1-t1" name="Deve cadastrar um anúncio com sucesso" line="22">
+<kw name="Begin Web Test" owner="base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-01-15T12:35:13.571249" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\TestBeyondQA\\OnClicTest\\bikeboard-robot\\logs\\browser\\traces\\temp\\0aef4028-6615-4ca2-b569-72dfa3b4ddd6"}</msg>
+<msg time="2026-01-15T12:35:13.665871" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\TestBeyondQA\\OnClicTest\\bikeboard-robot\\logs\\browser\\traces\\temp\\0aef4028-6615-4ca2-b569-72dfa3b4ddd6"}</msg>
+<arg>${BROWSER}</arg>
+<arg>headless=Yes</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-01-15T12:35:13.570599" elapsed="0.095561"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2026-01-15T12:35:13.668695" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 1080,
+    "width": 1920
+  }
+}</msg>
+<msg time="2026-01-15T12:35:13.680417" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-15T12:35:13.680516" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 1080, 'width': 1920}}</msg>
+<arg>viewport={'width': 1920, 'height': 1080}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2026-01-15T12:35:13.666523" elapsed="0.014075"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-01-15T12:35:13.954368" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000</msg>
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-01-15T12:35:13.680835" elapsed="0.273700"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2026-01-15T12:35:14.095041" level="INFO">Title: 'BikeBoard by Papito'</msg>
+<arg>==</arg>
+<arg>BikeBoard by Papito</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-01-15T12:35:13.954682" elapsed="0.140448"/>
+</kw>
+<doc>Navega para a página inicial e verifica o título.</doc>
+<status status="PASS" start="2026-01-15T12:35:13.569970" elapsed="0.525255"/>
+</kw>
+<kw name="Ad Creation Mock" owner="Browser">
+<msg time="2026-01-15T12:35:14.104269" level="INFO">ok</msg>
+<arg>${MY_BIKE}</arg>
+<doc>TODO: Add rfdoc string to exposed function to create documentation</doc>
+<status status="PASS" start="2026-01-15T12:35:14.095539" elapsed="0.009045"/>
+</kw>
+<kw name="Click Advertise Link" owner="ads">
+<kw name="Click" owner="Browser">
+<msg time="2026-01-15T12:35:14.105924" level="INFO">Clicks the element 'a &gt;&gt; text=Anunciar Grátis'.</msg>
+<arg>a &gt;&gt; text=Anunciar Grátis</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.105420" elapsed="0.153409"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-15T12:35:14.266970" level="INFO">Waited for Element with selector h3 &gt;&gt; text=Anunciar Bicicleta at state visible</msg>
+<arg>h3 &gt;&gt; text=Anunciar Bicicleta</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.259103" elapsed="0.008042"/>
+</kw>
+<doc>Clica no link para anunciar e verifica se a página correta foi carregada.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.104863" elapsed="0.162412"/>
+</kw>
+<kw name="Fill Ad Form" owner="ads">
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:14.269172" level="INFO">Fills the text 'Caloi Cross 1994 - clássica e conservada' in the given field.</msg>
+<arg>label:has-text("Título do Anúncio *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.title}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.268517" elapsed="0.051318"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:14.320843" level="INFO">Fills the text 'Relíquia dos anos 90! Bicicleta Caloi Cross original, toda revisada e em excelente estado. Pneus novos, pintura retrô preservada e selim original da época. Ideal para colecionadores e fãs de bikes vintage.' in the given field.</msg>
+<arg>label:has-text("Descrição Detalhada *") &gt;&gt; .. &gt;&gt; textarea</arg>
+<arg>${Bike.description}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.320023" elapsed="0.016518"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2026-01-15T12:35:14.337544" level="INFO">Selects the option(s) Caloi by attribute SelectAttribute.label from element select.</msg>
+<arg>select</arg>
+<arg>text</arg>
+<arg>${Bike.brand}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.336721" elapsed="0.031852"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:14.369584" level="INFO">Fills the text 'Cross Aro 20' in the given field.</msg>
+<arg>label:has-text("Modelo *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.model}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.368751" elapsed="0.012599"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:14.382442" level="INFO">Fills the text '1800' in the given field.</msg>
+<arg>label:has-text("Preço (R$) *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.price}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.381560" elapsed="0.032382"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:14.414939" level="INFO">Fills the text '1994' in the given field.</msg>
+<arg>label:has-text("Ano de Fabricação *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.year}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.414145" elapsed="0.010938"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:14.426187" level="INFO">Fills the text 'Fernando Papito' in the given field.</msg>
+<arg>label:has-text("Seu Nome *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.sellerName}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.425286" elapsed="0.013138"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:14.439453" level="INFO">Fills the text '11930091001' in the given field.</msg>
+<arg>label:has-text("WhatsApp *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.whatsapp}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.438660" elapsed="0.012109"/>
+</kw>
+<arg>${MY_BIKE}</arg>
+<doc>Preenche o formulário de anúncio com os dados fornecidos.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.267992" elapsed="0.182893"/>
+</kw>
+<kw name="Submit Ad Form" owner="ads">
+<kw name="Click" owner="Browser">
+<msg time="2026-01-15T12:35:14.452056" level="INFO">Clicks the element 'button &gt;&gt; text=Publicar Anúncio'.</msg>
+<arg>button &gt;&gt; text=Publicar Anúncio</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.451633" elapsed="0.052595"/>
+</kw>
+<doc>Clica no botão para submeter o formulário de anúncio.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.451232" elapsed="0.053114"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-15T12:35:14.549665" level="INFO">Waited for Element with selector h3 &gt;&gt; text=Anúncio Enviado com Sucesso! at state visible</msg>
+<arg>h3 &gt;&gt; text=Anúncio Enviado com Sucesso!</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.504640" elapsed="0.045186"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-15T12:35:14.555387" level="INFO">Waited for Element with selector text=Obrigado por escolher o BikeBoard para anunciar sua bicicleta at state visible</msg>
+<arg>text=Obrigado por escolher o BikeBoard para anunciar sua bicicleta</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.550170" elapsed="0.005379"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-15T12:35:14.562371" level="INFO">Waited for Element with selector text=Seu anúncio foi enviado para nossa equipe de moderação at state visible</msg>
+<arg>text=Seu anúncio foi enviado para nossa equipe de moderação</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.555886" elapsed="0.006661"/>
+</kw>
+<kw name="End Web Test" owner="base" type="TEARDOWN">
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2026-01-15T12:35:14.683420" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.563465" elapsed="0.120101"/>
+</kw>
+<kw name="Close Context" owner="Browser">
+<msg time="2026-01-15T12:35:14.686537" level="INFO">Switching browser to CURRENT</msg>
+<msg time="2026-01-15T12:35:14.687846" level="INFO">Returned active browser id. CURRENT</msg>
+<msg time="2026-01-15T12:35:14.689718" level="INFO">Switching context to CURRENT in CURRENT</msg>
+<msg time="2026-01-15T12:35:14.693731" level="INFO">Returned active context id: CURRENT</msg>
+<msg time="2026-01-15T12:35:14.694014" level="INFO">Switching context to context=acbdd4d3-f1f3-4bf9-8f34-b1ac8b4ee040 in CURRENT</msg>
+<msg time="2026-01-15T12:35:14.697678" level="INFO">Successfully changed active context: context=acbdd4d3-f1f3-4bf9-8f34-b1ac8b4ee040</msg>
+<msg time="2026-01-15T12:35:14.714970" level="INFO">Successfully closed Context</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes a Context.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.683705" elapsed="0.031400"/>
+</kw>
+<doc>Executado ao final de cada teste para tirar screenshot e salvar o vídeo.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.562992" elapsed="0.152218"/>
+</kw>
+<tag>smoke</tag>
+<tag>success</tag>
+<status status="PASS" start="2026-01-15T12:35:13.568276" elapsed="1.147174"/>
+</test>
+<test id="s1-s1-t2" name="Deve exibir erros para todos os campos obrigatórios não preenchidos" line="36">
+<kw name="Begin Web Test" owner="base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-01-15T12:35:14.720886" level="INFO">Switching browser to browser=b0cce2d6-a4ed-4e16-a24e-a992d6685431</msg>
+<msg time="2026-01-15T12:35:14.721835" level="INFO">Successfully changed active browser: browser=b0cce2d6-a4ed-4e16-a24e-a992d6685431</msg>
+<msg time="2026-01-15T12:35:14.721892" level="INFO">Reusing existing browser with id: browser=b0cce2d6-a4ed-4e16-a24e-a992d6685431</msg>
+<arg>${BROWSER}</arg>
+<arg>headless=Yes</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.720442" elapsed="0.001490"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2026-01-15T12:35:14.722983" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 1080,
+    "width": 1920
+  }
+}</msg>
+<msg time="2026-01-15T12:35:14.726665" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-15T12:35:14.726739" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 1080, 'width': 1920}}</msg>
+<arg>viewport={'width': 1920, 'height': 1080}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.722046" elapsed="0.004745"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-01-15T12:35:14.867811" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000</msg>
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.726912" elapsed="0.141046"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2026-01-15T12:35:14.910867" level="INFO">Title: 'BikeBoard by Papito'</msg>
+<arg>==</arg>
+<arg>BikeBoard by Papito</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.868118" elapsed="0.042843"/>
+</kw>
+<doc>Navega para a página inicial e verifica o título.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.719985" elapsed="0.191067"/>
+</kw>
+<kw name="Click Advertise Link" owner="ads">
+<kw name="Click" owner="Browser">
+<msg time="2026-01-15T12:35:14.912531" level="INFO">Clicks the element 'a &gt;&gt; text=Anunciar Grátis'.</msg>
+<arg>a &gt;&gt; text=Anunciar Grátis</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.911937" elapsed="0.078563"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-15T12:35:14.996630" level="INFO">Waited for Element with selector h3 &gt;&gt; text=Anunciar Bicicleta at state visible</msg>
+<arg>h3 &gt;&gt; text=Anunciar Bicicleta</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.990842" elapsed="0.005998"/>
+</kw>
+<doc>Clica no link para anunciar e verifica se a página correta foi carregada.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.911360" elapsed="0.085591"/>
+</kw>
+<kw name="Submit Ad Form" owner="ads">
+<kw name="Click" owner="Browser">
+<msg time="2026-01-15T12:35:14.998403" level="INFO">Clicks the element 'button &gt;&gt; text=Publicar Anúncio'.</msg>
+<arg>button &gt;&gt; text=Publicar Anúncio</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.997916" elapsed="0.041543"/>
+</kw>
+<doc>Clica no botão para submeter o formulário de anúncio.</doc>
+<status status="PASS" start="2026-01-15T12:35:14.997324" elapsed="0.042249"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2026-01-15T12:35:15.040680" level="INFO">@{Alerts} = [ Título deve ter pelo menos 10 caracteres | Descrição deve ter pelo menos 30 caracteres | Marca é obrigatória | Modelo é obrigatório | Preço mínimo é R$ 100 | Nome é obrigatório | WhatsApp inválido (...</msg>
+<var>@{Alerts}</var>
+<arg>Título deve ter pelo menos 10 caracteres</arg>
+<arg>Descrição deve ter pelo menos 30 caracteres</arg>
+<arg>Marca é obrigatória</arg>
+<arg>Modelo é obrigatório</arg>
+<arg>Preço mínimo é R$ 100</arg>
+<arg>Nome é obrigatório</arg>
+<arg>WhatsApp inválido (formato: 11999999999)</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.039996" elapsed="0.000714"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-15T12:35:15.047395" level="INFO">Waited for Element with selector text=Título deve ter pelo menos 10 caracteres at state visible</msg>
+<arg>text=${msg}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.041822" elapsed="0.005725"/>
+</kw>
+<var name="${msg}">Título deve ter pelo menos 10 caracteres</var>
+<status status="PASS" start="2026-01-15T12:35:15.041367" elapsed="0.006253"/>
+</iter>
+<iter>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-15T12:35:15.053599" level="INFO">Waited for Element with selector text=Descrição deve ter pelo menos 30 caracteres at state visible</msg>
+<arg>text=${msg}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.048151" elapsed="0.005576"/>
+</kw>
+<var name="${msg}">Descrição deve ter pelo menos 30 caracteres</var>
+<status status="PASS" start="2026-01-15T12:35:15.047769" elapsed="0.006025"/>
+</iter>
+<iter>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-15T12:35:15.059143" level="INFO">Waited for Element with selector text=Marca é obrigatória at state visible</msg>
+<arg>text=${msg}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.054255" elapsed="0.005035"/>
+</kw>
+<var name="${msg}">Marca é obrigatória</var>
+<status status="PASS" start="2026-01-15T12:35:15.053927" elapsed="0.005437"/>
+</iter>
+<iter>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-15T12:35:15.064938" level="INFO">Waited for Element with selector text=Modelo é obrigatório at state visible</msg>
+<arg>text=${msg}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.059914" elapsed="0.005163"/>
+</kw>
+<var name="${msg}">Modelo é obrigatório</var>
+<status status="PASS" start="2026-01-15T12:35:15.059494" elapsed="0.005669"/>
+</iter>
+<iter>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-15T12:35:15.070205" level="INFO">Waited for Element with selector text=Preço mínimo é R$ 100 at state visible</msg>
+<arg>text=${msg}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.065852" elapsed="0.004478"/>
+</kw>
+<var name="${msg}">Preço mínimo é R$ 100</var>
+<status status="PASS" start="2026-01-15T12:35:15.065289" elapsed="0.005111"/>
+</iter>
+<iter>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-15T12:35:15.076222" level="INFO">Waited for Element with selector text=Nome é obrigatório at state visible</msg>
+<arg>text=${msg}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.070867" elapsed="0.005509"/>
+</kw>
+<var name="${msg}">Nome é obrigatório</var>
+<status status="PASS" start="2026-01-15T12:35:15.070520" elapsed="0.005930"/>
+</iter>
+<iter>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-15T12:35:15.082285" level="INFO">Waited for Element with selector text=WhatsApp inválido (formato: 11999999999) at state visible</msg>
+<arg>text=${msg}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.077005" elapsed="0.005408"/>
+</kw>
+<var name="${msg}">WhatsApp inválido (formato: 11999999999)</var>
+<status status="PASS" start="2026-01-15T12:35:15.076606" elapsed="0.005866"/>
+</iter>
+<var>${msg}</var>
+<value>@{Alerts}</value>
+<status status="PASS" start="2026-01-15T12:35:15.040912" elapsed="0.041599"/>
+</for>
+<kw name="End Web Test" owner="base" type="TEARDOWN">
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2026-01-15T12:35:15.173108" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.083274" elapsed="0.089952"/>
+</kw>
+<kw name="Close Context" owner="Browser">
+<msg time="2026-01-15T12:35:15.176121" level="INFO">Switching browser to CURRENT</msg>
+<msg time="2026-01-15T12:35:15.177240" level="INFO">Returned active browser id. CURRENT</msg>
+<msg time="2026-01-15T12:35:15.178908" level="INFO">Switching context to CURRENT in CURRENT</msg>
+<msg time="2026-01-15T12:35:15.181583" level="INFO">Returned active context id: CURRENT</msg>
+<msg time="2026-01-15T12:35:15.181814" level="INFO">Switching context to context=9e2a51d5-acb2-4ff5-bf24-4b7bd839e177 in CURRENT</msg>
+<msg time="2026-01-15T12:35:15.184389" level="INFO">Successfully changed active context: context=9e2a51d5-acb2-4ff5-bf24-4b7bd839e177</msg>
+<msg time="2026-01-15T12:35:15.188287" level="INFO">Successfully closed Context</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes a Context.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.173350" elapsed="0.015090"/>
+</kw>
+<doc>Executado ao final de cada teste para tirar screenshot e salvar o vídeo.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.082866" elapsed="0.105659"/>
+</kw>
+<tag>validation</tag>
+<status status="PASS" start="2026-01-15T12:35:14.718761" elapsed="0.469939"/>
+</test>
+<test id="s1-s1-t3" name="Deve exibir erro quando o WhatsApp tem formato inválido" line="54">
+<kw name="Begin Web Test" owner="base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-01-15T12:35:15.192961" level="INFO">Switching browser to browser=b0cce2d6-a4ed-4e16-a24e-a992d6685431</msg>
+<msg time="2026-01-15T12:35:15.193784" level="INFO">Successfully changed active browser: browser=b0cce2d6-a4ed-4e16-a24e-a992d6685431</msg>
+<msg time="2026-01-15T12:35:15.193838" level="INFO">Reusing existing browser with id: browser=b0cce2d6-a4ed-4e16-a24e-a992d6685431</msg>
+<arg>${BROWSER}</arg>
+<arg>headless=Yes</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.192532" elapsed="0.001340"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2026-01-15T12:35:15.194861" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 1080,
+    "width": 1920
+  }
+}</msg>
+<msg time="2026-01-15T12:35:15.198079" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-15T12:35:15.198155" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 1080, 'width': 1920}}</msg>
+<arg>viewport={'width': 1920, 'height': 1080}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.193985" elapsed="0.004220"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-01-15T12:35:15.275967" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000</msg>
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.198342" elapsed="0.077845"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2026-01-15T12:35:15.309339" level="INFO">Title: 'BikeBoard by Papito'</msg>
+<arg>==</arg>
+<arg>BikeBoard by Papito</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.276377" elapsed="0.033050"/>
+</kw>
+<doc>Navega para a página inicial e verifica o título.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.192143" elapsed="0.117366"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-15T12:35:15.310479" level="INFO">${TestData} = {'title': 'Caloi Cross 1994 - clássica e conservada', 'description': 'Relíquia dos anos 90! Bicicleta Caloi Cross original, toda revisada e em excelente estado. Pneus novos, pintura retrô preservada e...</msg>
+<var>${TestData}</var>
+<arg>&amp;{MY_BIKE}</arg>
+<arg>whatsapp=1111</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.309752" elapsed="0.000758"/>
+</kw>
+<kw name="Click Advertise Link" owner="ads">
+<kw name="Click" owner="Browser">
+<msg time="2026-01-15T12:35:15.311602" level="INFO">Clicks the element 'a &gt;&gt; text=Anunciar Grátis'.</msg>
+<arg>a &gt;&gt; text=Anunciar Grátis</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.311177" elapsed="0.076170"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-15T12:35:15.392021" level="INFO">Waited for Element with selector h3 &gt;&gt; text=Anunciar Bicicleta at state visible</msg>
+<arg>h3 &gt;&gt; text=Anunciar Bicicleta</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.387577" elapsed="0.004567"/>
+</kw>
+<doc>Clica no link para anunciar e verifica se a página correta foi carregada.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.310817" elapsed="0.081411"/>
+</kw>
+<kw name="Fill Ad Form" owner="ads">
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:15.393589" level="INFO">Fills the text 'Caloi Cross 1994 - clássica e conservada' in the given field.</msg>
+<arg>label:has-text("Título do Anúncio *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.title}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.393015" elapsed="0.011905"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:15.405777" level="INFO">Fills the text 'Relíquia dos anos 90! Bicicleta Caloi Cross original, toda revisada e em excelente estado. Pneus novos, pintura retrô preservada e selim original da época. Ideal para colecionadores e fãs de bikes vintage.' in the given field.</msg>
+<arg>label:has-text("Descrição Detalhada *") &gt;&gt; .. &gt;&gt; textarea</arg>
+<arg>${Bike.description}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.405079" elapsed="0.012808"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2026-01-15T12:35:15.418904" level="INFO">Selects the option(s) Caloi by attribute SelectAttribute.label from element select.</msg>
+<arg>select</arg>
+<arg>text</arg>
+<arg>${Bike.brand}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.418072" elapsed="0.026727"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:15.445725" level="INFO">Fills the text 'Cross Aro 20' in the given field.</msg>
+<arg>label:has-text("Modelo *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.model}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.444961" elapsed="0.011993"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:15.457883" level="INFO">Fills the text '1800' in the given field.</msg>
+<arg>label:has-text("Preço (R$) *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.price}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.457120" elapsed="0.018758"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:15.476991" level="INFO">Fills the text '1994' in the given field.</msg>
+<arg>label:has-text("Ano de Fabricação *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.year}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.476066" elapsed="0.007950"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:15.484862" level="INFO">Fills the text 'Fernando Papito' in the given field.</msg>
+<arg>label:has-text("Seu Nome *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.sellerName}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.484170" elapsed="0.008725"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:15.493987" level="INFO">Fills the text '1111' in the given field.</msg>
+<arg>label:has-text("WhatsApp *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.whatsapp}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.493124" elapsed="0.010560"/>
+</kw>
+<arg>${TestData}</arg>
+<doc>Preenche o formulário de anúncio com os dados fornecidos.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.392551" elapsed="0.111329"/>
+</kw>
+<kw name="Submit Ad Form" owner="ads">
+<kw name="Click" owner="Browser">
+<msg time="2026-01-15T12:35:15.505320" level="INFO">Clicks the element 'button &gt;&gt; text=Publicar Anúncio'.</msg>
+<arg>button &gt;&gt; text=Publicar Anúncio</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.504829" elapsed="0.044044"/>
+</kw>
+<doc>Clica no botão para submeter o formulário de anúncio.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.504243" elapsed="0.044734"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-15T12:35:15.552728" level="INFO">Waited for Element with selector text=WhatsApp inválido (formato: 11999999999) at state visible</msg>
+<arg>text=WhatsApp inválido (formato: 11999999999)</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.549204" elapsed="0.003627"/>
+</kw>
+<kw name="End Web Test" owner="base" type="TEARDOWN">
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2026-01-15T12:35:15.655018" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-3.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-3.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.553527" elapsed="0.101635"/>
+</kw>
+<kw name="Close Context" owner="Browser">
+<msg time="2026-01-15T12:35:15.658760" level="INFO">Switching browser to CURRENT</msg>
+<msg time="2026-01-15T12:35:15.660267" level="INFO">Returned active browser id. CURRENT</msg>
+<msg time="2026-01-15T12:35:15.662029" level="INFO">Switching context to CURRENT in CURRENT</msg>
+<msg time="2026-01-15T12:35:15.664530" level="INFO">Returned active context id: CURRENT</msg>
+<msg time="2026-01-15T12:35:15.664793" level="INFO">Switching context to context=60598efc-9e9a-407b-80fd-405fb6060fae in CURRENT</msg>
+<msg time="2026-01-15T12:35:15.668893" level="INFO">Successfully changed active context: context=60598efc-9e9a-407b-80fd-405fb6060fae</msg>
+<msg time="2026-01-15T12:35:15.673025" level="INFO">Successfully closed Context</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes a Context.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.655320" elapsed="0.017865"/>
+</kw>
+<doc>Executado ao final de cada teste para tirar screenshot e salvar o vídeo.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.553141" elapsed="0.120124"/>
+</kw>
+<tag>temp</tag>
+<tag>validation</tag>
+<status status="PASS" start="2026-01-15T12:35:15.191096" elapsed="0.482326"/>
+</test>
+<test id="s1-s1-t4" name="Deve exibir erro quando o WhatsApp tem menos de 10 dígitos" line="64">
+<kw name="Begin Web Test" owner="base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-01-15T12:35:15.677493" level="INFO">Switching browser to browser=b0cce2d6-a4ed-4e16-a24e-a992d6685431</msg>
+<msg time="2026-01-15T12:35:15.678288" level="INFO">Successfully changed active browser: browser=b0cce2d6-a4ed-4e16-a24e-a992d6685431</msg>
+<msg time="2026-01-15T12:35:15.678341" level="INFO">Reusing existing browser with id: browser=b0cce2d6-a4ed-4e16-a24e-a992d6685431</msg>
+<arg>${BROWSER}</arg>
+<arg>headless=Yes</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.677034" elapsed="0.001343"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2026-01-15T12:35:15.679373" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 1080,
+    "width": 1920
+  }
+}</msg>
+<msg time="2026-01-15T12:35:15.683576" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-15T12:35:15.683660" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 1080, 'width': 1920}}</msg>
+<arg>viewport={'width': 1920, 'height': 1080}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.678490" elapsed="0.005222"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-01-15T12:35:15.771360" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000</msg>
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.683866" elapsed="0.087642"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2026-01-15T12:35:15.807238" level="INFO">Title: 'BikeBoard by Papito'</msg>
+<arg>==</arg>
+<arg>BikeBoard by Papito</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.771653" elapsed="0.035693"/>
+</kw>
+<doc>Navega para a página inicial e verifica o título.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.676625" elapsed="0.130810"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-15T12:35:15.808286" level="INFO">${TestData} = {'title': 'Caloi Cross 1994 - clássica e conservada', 'description': 'Relíquia dos anos 90! Bicicleta Caloi Cross original, toda revisada e em excelente estado. Pneus novos, pintura retrô preservada e...</msg>
+<var>${TestData}</var>
+<arg>&amp;{MY_BIKE}</arg>
+<arg>whatsapp=119999999</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.807740" elapsed="0.000574"/>
+</kw>
+<kw name="Click Advertise Link" owner="ads">
+<kw name="Click" owner="Browser">
+<msg time="2026-01-15T12:35:15.809531" level="INFO">Clicks the element 'a &gt;&gt; text=Anunciar Grátis'.</msg>
+<arg>a &gt;&gt; text=Anunciar Grátis</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.808999" elapsed="0.080657"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-15T12:35:15.895296" level="INFO">Waited for Element with selector h3 &gt;&gt; text=Anunciar Bicicleta at state visible</msg>
+<arg>h3 &gt;&gt; text=Anunciar Bicicleta</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.889904" elapsed="0.005558"/>
+</kw>
+<doc>Clica no link para anunciar e verifica se a página correta foi carregada.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.808602" elapsed="0.086968"/>
+</kw>
+<kw name="Fill Ad Form" owner="ads">
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:15.897244" level="INFO">Fills the text 'Caloi Cross 1994 - clássica e conservada' in the given field.</msg>
+<arg>label:has-text("Título do Anúncio *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.title}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.896440" elapsed="0.015118"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:15.912698" level="INFO">Fills the text 'Relíquia dos anos 90! Bicicleta Caloi Cross original, toda revisada e em excelente estado. Pneus novos, pintura retrô preservada e selim original da época. Ideal para colecionadores e fãs de bikes vintage.' in the given field.</msg>
+<arg>label:has-text("Descrição Detalhada *") &gt;&gt; .. &gt;&gt; textarea</arg>
+<arg>${Bike.description}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.911822" elapsed="0.020858"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2026-01-15T12:35:15.933569" level="INFO">Selects the option(s) Caloi by attribute SelectAttribute.label from element select.</msg>
+<arg>select</arg>
+<arg>text</arg>
+<arg>${Bike.brand}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.932853" elapsed="0.024051"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:15.958021" level="INFO">Fills the text 'Cross Aro 20' in the given field.</msg>
+<arg>label:has-text("Modelo *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.model}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.957104" elapsed="0.012293"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:15.970358" level="INFO">Fills the text '1800' in the given field.</msg>
+<arg>label:has-text("Preço (R$) *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.price}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.969574" elapsed="0.019327"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:15.989920" level="INFO">Fills the text '1994' in the given field.</msg>
+<arg>label:has-text("Ano de Fabricação *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.year}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.989066" elapsed="0.008302"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:15.998243" level="INFO">Fills the text 'Fernando Papito' in the given field.</msg>
+<arg>label:has-text("Seu Nome *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.sellerName}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.997529" elapsed="0.007935"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:16.006568" level="INFO">Fills the text '119999999' in the given field.</msg>
+<arg>label:has-text("WhatsApp *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.whatsapp}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.005624" elapsed="0.010767"/>
+</kw>
+<arg>${TestData}</arg>
+<doc>Preenche o formulário de anúncio com os dados fornecidos.</doc>
+<status status="PASS" start="2026-01-15T12:35:15.895918" elapsed="0.120597"/>
+</kw>
+<kw name="Submit Ad Form" owner="ads">
+<kw name="Click" owner="Browser">
+<msg time="2026-01-15T12:35:16.017713" level="INFO">Clicks the element 'button &gt;&gt; text=Publicar Anúncio'.</msg>
+<arg>button &gt;&gt; text=Publicar Anúncio</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.017286" elapsed="0.031751"/>
+</kw>
+<doc>Clica no botão para submeter o formulário de anúncio.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.016799" elapsed="0.032344"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-15T12:35:16.053363" level="INFO">Waited for Element with selector text=WhatsApp deve ter 10 ou 11 dígitos at state visible</msg>
+<arg>text=WhatsApp deve ter 10 ou 11 dígitos</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.049367" elapsed="0.004117"/>
+</kw>
+<kw name="End Web Test" owner="base" type="TEARDOWN">
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2026-01-15T12:35:16.151271" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-4.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-4.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.054228" elapsed="0.097154"/>
+</kw>
+<kw name="Close Context" owner="Browser">
+<msg time="2026-01-15T12:35:16.153882" level="INFO">Switching browser to CURRENT</msg>
+<msg time="2026-01-15T12:35:16.155039" level="INFO">Returned active browser id. CURRENT</msg>
+<msg time="2026-01-15T12:35:16.156707" level="INFO">Switching context to CURRENT in CURRENT</msg>
+<msg time="2026-01-15T12:35:16.159751" level="INFO">Returned active context id: CURRENT</msg>
+<msg time="2026-01-15T12:35:16.160001" level="INFO">Switching context to context=12d59bba-4ae7-413a-832d-21e9af3a7b4d in CURRENT</msg>
+<msg time="2026-01-15T12:35:16.162435" level="INFO">Successfully changed active context: context=12d59bba-4ae7-413a-832d-21e9af3a7b4d</msg>
+<msg time="2026-01-15T12:35:16.166107" level="INFO">Successfully closed Context</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes a Context.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.151501" elapsed="0.014757"/>
+</kw>
+<doc>Executado ao final de cada teste para tirar screenshot e salvar o vídeo.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.053815" elapsed="0.112526"/>
+</kw>
+<tag>validation</tag>
+<status status="PASS" start="2026-01-15T12:35:15.675456" elapsed="0.491003"/>
+</test>
+<test id="s1-s1-t5" name="Deve exibir erro quando a descrição tem menos de 30 caracteres" line="74">
+<kw name="Begin Web Test" owner="base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-01-15T12:35:16.170261" level="INFO">Switching browser to browser=b0cce2d6-a4ed-4e16-a24e-a992d6685431</msg>
+<msg time="2026-01-15T12:35:16.171068" level="INFO">Successfully changed active browser: browser=b0cce2d6-a4ed-4e16-a24e-a992d6685431</msg>
+<msg time="2026-01-15T12:35:16.171124" level="INFO">Reusing existing browser with id: browser=b0cce2d6-a4ed-4e16-a24e-a992d6685431</msg>
+<arg>${BROWSER}</arg>
+<arg>headless=Yes</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.169816" elapsed="0.001347"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2026-01-15T12:35:16.172148" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 1080,
+    "width": 1920
+  }
+}</msg>
+<msg time="2026-01-15T12:35:16.175374" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-15T12:35:16.175438" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 1080, 'width': 1920}}</msg>
+<arg>viewport={'width': 1920, 'height': 1080}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.171279" elapsed="0.004207"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-01-15T12:35:16.261393" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000</msg>
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.175654" elapsed="0.085899"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2026-01-15T12:35:16.296145" level="INFO">Title: 'BikeBoard by Papito'</msg>
+<arg>==</arg>
+<arg>BikeBoard by Papito</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.261695" elapsed="0.034547"/>
+</kw>
+<doc>Navega para a página inicial e verifica o título.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.169418" elapsed="0.126912"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-15T12:35:16.297330" level="INFO">${TestData} = {'title': 'Caloi Cross 1994 - clássica e conservada', 'description': 'Bike muito bonita!', 'brand': 'Caloi', 'model': 'Cross Aro 20', 'price': 1800, 'year': 1994, 'sellerName': 'Fernando Papito', 'wha...</msg>
+<var>${TestData}</var>
+<arg>&amp;{MY_BIKE}</arg>
+<arg>description=Bike muito bonita!</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.296657" elapsed="0.000706"/>
+</kw>
+<kw name="Click Advertise Link" owner="ads">
+<kw name="Click" owner="Browser">
+<msg time="2026-01-15T12:35:16.298546" level="INFO">Clicks the element 'a &gt;&gt; text=Anunciar Grátis'.</msg>
+<arg>a &gt;&gt; text=Anunciar Grátis</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.298057" elapsed="0.078418"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-15T12:35:16.382325" level="INFO">Waited for Element with selector h3 &gt;&gt; text=Anunciar Bicicleta at state visible</msg>
+<arg>h3 &gt;&gt; text=Anunciar Bicicleta</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.376786" elapsed="0.005715"/>
+</kw>
+<doc>Clica no link para anunciar e verifica se a página correta foi carregada.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.297640" elapsed="0.084969"/>
+</kw>
+<kw name="Fill Ad Form" owner="ads">
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:16.384322" level="INFO">Fills the text 'Caloi Cross 1994 - clássica e conservada' in the given field.</msg>
+<arg>label:has-text("Título do Anúncio *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.title}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.383536" elapsed="0.015700"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:16.400135" level="INFO">Fills the text 'Bike muito bonita!' in the given field.</msg>
+<arg>label:has-text("Descrição Detalhada *") &gt;&gt; .. &gt;&gt; textarea</arg>
+<arg>${Bike.description}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.399402" elapsed="0.016824"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2026-01-15T12:35:16.417296" level="INFO">Selects the option(s) Caloi by attribute SelectAttribute.label from element select.</msg>
+<arg>select</arg>
+<arg>text</arg>
+<arg>${Bike.brand}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.416431" elapsed="0.026562"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:16.443887" level="INFO">Fills the text 'Cross Aro 20' in the given field.</msg>
+<arg>label:has-text("Modelo *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.model}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.443160" elapsed="0.012191"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:16.456244" level="INFO">Fills the text '1800' in the given field.</msg>
+<arg>label:has-text("Preço (R$) *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.price}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.455517" elapsed="0.020833"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:16.477408" level="INFO">Fills the text '1994' in the given field.</msg>
+<arg>label:has-text("Ano de Fabricação *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.year}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.476577" elapsed="0.009647"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:16.487133" level="INFO">Fills the text 'Fernando Papito' in the given field.</msg>
+<arg>label:has-text("Seu Nome *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.sellerName}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.486407" elapsed="0.010159"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:16.497615" level="INFO">Fills the text '11930091001' in the given field.</msg>
+<arg>label:has-text("WhatsApp *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.whatsapp}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.496751" elapsed="0.010978"/>
+</kw>
+<arg>${TestData}</arg>
+<doc>Preenche o formulário de anúncio com os dados fornecidos.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.382995" elapsed="0.124857"/>
+</kw>
+<kw name="Submit Ad Form" owner="ads">
+<kw name="Click" owner="Browser">
+<msg time="2026-01-15T12:35:16.509117" level="INFO">Clicks the element 'button &gt;&gt; text=Publicar Anúncio'.</msg>
+<arg>button &gt;&gt; text=Publicar Anúncio</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.508676" elapsed="0.041076"/>
+</kw>
+<doc>Clica no botão para submeter o formulário de anúncio.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.508176" elapsed="0.041707"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-15T12:35:16.554086" level="INFO">Waited for Element with selector text=Descrição deve ter pelo menos 30 caracteres at state visible</msg>
+<arg>text=Descrição deve ter pelo menos 30 caracteres</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.550165" elapsed="0.004047"/>
+</kw>
+<kw name="End Web Test" owner="base" type="TEARDOWN">
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2026-01-15T12:35:16.653954" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-5.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-5.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.555014" elapsed="0.099082"/>
+</kw>
+<kw name="Close Context" owner="Browser">
+<msg time="2026-01-15T12:35:16.656745" level="INFO">Switching browser to CURRENT</msg>
+<msg time="2026-01-15T12:35:16.658272" level="INFO">Returned active browser id. CURRENT</msg>
+<msg time="2026-01-15T12:35:16.660326" level="INFO">Switching context to CURRENT in CURRENT</msg>
+<msg time="2026-01-15T12:35:16.662924" level="INFO">Returned active context id: CURRENT</msg>
+<msg time="2026-01-15T12:35:16.663181" level="INFO">Switching context to context=9f575d62-4ba3-4ccb-8914-3ec978bd2ab1 in CURRENT</msg>
+<msg time="2026-01-15T12:35:16.665484" level="INFO">Successfully changed active context: context=9f575d62-4ba3-4ccb-8914-3ec978bd2ab1</msg>
+<msg time="2026-01-15T12:35:16.669175" level="INFO">Successfully closed Context</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes a Context.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.654227" elapsed="0.015084"/>
+</kw>
+<doc>Executado ao final de cada teste para tirar screenshot e salvar o vídeo.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.554577" elapsed="0.114815"/>
+</kw>
+<tag>validation</tag>
+<status status="PASS" start="2026-01-15T12:35:16.168421" elapsed="0.501131"/>
+</test>
+<test id="s1-s1-t6" name="Deve mostrar erro quando o preço é menor que R$ 100" line="84">
+<kw name="Begin Web Test" owner="base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-01-15T12:35:16.673919" level="INFO">Switching browser to browser=b0cce2d6-a4ed-4e16-a24e-a992d6685431</msg>
+<msg time="2026-01-15T12:35:16.674766" level="INFO">Successfully changed active browser: browser=b0cce2d6-a4ed-4e16-a24e-a992d6685431</msg>
+<msg time="2026-01-15T12:35:16.674825" level="INFO">Reusing existing browser with id: browser=b0cce2d6-a4ed-4e16-a24e-a992d6685431</msg>
+<arg>${BROWSER}</arg>
+<arg>headless=Yes</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.673454" elapsed="0.001409"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2026-01-15T12:35:16.675885" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 1080,
+    "width": 1920
+  }
+}</msg>
+<msg time="2026-01-15T12:35:16.679037" level="INFO">Successfully created context. </msg>
+<msg time="2026-01-15T12:35:16.679099" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 1080, 'width': 1920}}</msg>
+<arg>viewport={'width': 1920, 'height': 1080}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.674978" elapsed="0.004171"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-01-15T12:35:16.760553" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000</msg>
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.679275" elapsed="0.081725"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2026-01-15T12:35:16.794755" level="INFO">Title: 'BikeBoard by Papito'</msg>
+<arg>==</arg>
+<arg>BikeBoard by Papito</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.761518" elapsed="0.033326"/>
+</kw>
+<doc>Navega para a página inicial e verifica o título.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.673070" elapsed="0.121856"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-15T12:35:16.795709" level="INFO">${TestData} = {'title': 'Caloi Cross 1994 - clássica e conservada', 'description': 'Relíquia dos anos 90! Bicicleta Caloi Cross original, toda revisada e em excelente estado. Pneus novos, pintura retrô preservada e...</msg>
+<var>${TestData}</var>
+<arg>&amp;{MY_BIKE}</arg>
+<arg>price=99</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.795179" elapsed="0.000558"/>
+</kw>
+<kw name="Click Advertise Link" owner="ads">
+<kw name="Click" owner="Browser">
+<msg time="2026-01-15T12:35:16.796883" level="INFO">Clicks the element 'a &gt;&gt; text=Anunciar Grátis'.</msg>
+<arg>a &gt;&gt; text=Anunciar Grátis</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.796383" elapsed="0.090985"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-15T12:35:16.893337" level="INFO">Waited for Element with selector h3 &gt;&gt; text=Anunciar Bicicleta at state visible</msg>
+<arg>h3 &gt;&gt; text=Anunciar Bicicleta</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.887577" elapsed="0.005963"/>
+</kw>
+<doc>Clica no link para anunciar e verifica se a página correta foi carregada.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.796003" elapsed="0.097639"/>
+</kw>
+<kw name="Fill Ad Form" owner="ads">
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:16.895300" level="INFO">Fills the text 'Caloi Cross 1994 - clássica e conservada' in the given field.</msg>
+<arg>label:has-text("Título do Anúncio *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.title}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.894675" elapsed="0.014426"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:16.910677" level="INFO">Fills the text 'Relíquia dos anos 90! Bicicleta Caloi Cross original, toda revisada e em excelente estado. Pneus novos, pintura retrô preservada e selim original da época. Ideal para colecionadores e fãs de bikes vintage.' in the given field.</msg>
+<arg>label:has-text("Descrição Detalhada *") &gt;&gt; .. &gt;&gt; textarea</arg>
+<arg>${Bike.description}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.909439" elapsed="0.013557"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2026-01-15T12:35:16.924285" level="INFO">Selects the option(s) Caloi by attribute SelectAttribute.label from element select.</msg>
+<arg>select</arg>
+<arg>text</arg>
+<arg>${Bike.brand}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.923209" elapsed="0.024032"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:16.948333" level="INFO">Fills the text 'Cross Aro 20' in the given field.</msg>
+<arg>label:has-text("Modelo *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.model}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.947417" elapsed="0.011230"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:16.960048" level="INFO">Fills the text '99' in the given field.</msg>
+<arg>label:has-text("Preço (R$) *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.price}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.958898" elapsed="0.020816"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:16.981064" level="INFO">Fills the text '1994' in the given field.</msg>
+<arg>label:has-text("Ano de Fabricação *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.year}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.979982" elapsed="0.011141"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:16.992249" level="INFO">Fills the text 'Fernando Papito' in the given field.</msg>
+<arg>label:has-text("Seu Nome *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.sellerName}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.991317" elapsed="0.009645"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-01-15T12:35:17.001938" level="INFO">Fills the text '11930091001' in the given field.</msg>
+<arg>label:has-text("WhatsApp *") &gt;&gt; .. &gt;&gt; input</arg>
+<arg>${Bike.whatsapp}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:17.001145" elapsed="0.010886"/>
+</kw>
+<arg>${TestData}</arg>
+<doc>Preenche o formulário de anúncio com os dados fornecidos.</doc>
+<status status="PASS" start="2026-01-15T12:35:16.894025" elapsed="0.118122"/>
+</kw>
+<kw name="Submit Ad Form" owner="ads">
+<kw name="Click" owner="Browser">
+<msg time="2026-01-15T12:35:17.013272" level="INFO">Clicks the element 'button &gt;&gt; text=Publicar Anúncio'.</msg>
+<arg>button &gt;&gt; text=Publicar Anúncio</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-01-15T12:35:17.012879" elapsed="0.037198"/>
+</kw>
+<doc>Clica no botão para submeter o formulário de anúncio.</doc>
+<status status="PASS" start="2026-01-15T12:35:17.012420" elapsed="0.037774"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-01-15T12:35:17.055097" level="INFO">Waited for Element with selector text=Preço mínimo é R$ 100 at state visible</msg>
+<arg>text=Preço mínimo é R$ 100</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-01-15T12:35:17.050425" elapsed="0.004814"/>
+</kw>
+<kw name="End Web Test" owner="base" type="TEARDOWN">
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2026-01-15T12:35:17.152844" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-6.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-6.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2026-01-15T12:35:17.056054" elapsed="0.096905"/>
+</kw>
+<kw name="Close Context" owner="Browser">
+<msg time="2026-01-15T12:35:17.155438" level="INFO">Switching browser to CURRENT</msg>
+<msg time="2026-01-15T12:35:17.156588" level="INFO">Returned active browser id. CURRENT</msg>
+<msg time="2026-01-15T12:35:17.159070" level="INFO">Switching context to CURRENT in CURRENT</msg>
+<msg time="2026-01-15T12:35:17.162459" level="INFO">Returned active context id: CURRENT</msg>
+<msg time="2026-01-15T12:35:17.162713" level="INFO">Switching context to context=573679fb-65be-4bce-88fe-6a2855a99fff in CURRENT</msg>
+<msg time="2026-01-15T12:35:17.165425" level="INFO">Successfully changed active context: context=573679fb-65be-4bce-88fe-6a2855a99fff</msg>
+<msg time="2026-01-15T12:35:17.168971" level="INFO">Successfully closed Context</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes a Context.</doc>
+<status status="PASS" start="2026-01-15T12:35:17.153086" elapsed="0.016022"/>
+</kw>
+<doc>Executado ao final de cada teste para tirar screenshot e salvar o vídeo.</doc>
+<status status="PASS" start="2026-01-15T12:35:17.055593" elapsed="0.113592"/>
+</kw>
+<tag>validation</tag>
+<status status="PASS" start="2026-01-15T12:35:16.671789" elapsed="0.497531"/>
+</test>
+<doc>Suite de testes para cadastro de anúncios de bicicletas.</doc>
+<status status="PASS" start="2026-01-15T12:35:09.724842" elapsed="7.446688"/>
+</suite>
+<status status="PASS" start="2026-01-15T12:35:09.596019" elapsed="7.577663"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">smoke</stat>
+<stat pass="1" fail="0" skip="0">success</stat>
+<stat pass="1" fail="0" skip="0">temp</stat>
+<stat pass="5" fail="0" skip="0">validation</stat>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="6" fail="0" skip="0">Tests</stat>
+<stat name="Ads" id="s1-s1" pass="6" fail="0" skip="0">Tests.Ads</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-01-15T12:35:13.560527" level="WARN">Error in file 'C:\TestBeyondQA\OnClicTest\bikeboard-robot\robot\resources\base.resource' on line 2: Suite 'Tests.Ads' has already imported library 'Browser' with different arguments. This import is ignored.</msg>
+<msg time="2026-01-15T12:35:13.563745" level="WARN">Error in file 'C:\TestBeyondQA\OnClicTest\bikeboard-robot\robot\resources\actions\ads.resource' on line 2: Suite 'Tests.Ads' has already imported library 'Browser' with different arguments. This import is ignored.</msg>
+</errors>
+</robot>

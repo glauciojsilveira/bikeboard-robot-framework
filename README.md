@@ -25,6 +25,7 @@ npm install
 ### 3. Instalar dependências do Python
 ```bash
 pip install -r requirements.txt
+ - Instalar o Robot Framework: pip install robotframework , pip install robotframework-browser , pip install -r requirements.txt , rfbrowser init ou python -m Browser.entry init, robot --version , robot -d ./logs robot/tests/
 ```
 
 ### 4. Inicializar o navegador para Robot Framework
@@ -92,7 +93,7 @@ jobs:
     - name: Setup Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.8'
+        python-version: '3.14'
     - name: Install dependencies
       run: |
         pip install -r requirements.txt

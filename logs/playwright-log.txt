@@ -1,0 +1,473 @@
+{"level":30,"time":"2026-01-15T15:35:13.196Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Listening on 127.0.0.1:61639"}
+{"level":30,"time":"2026-01-15T15:35:13.499Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method initializeExtension"}
+{"level":30,"time":"2026-01-15T15:35:13.499Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Initializing extension: C:\\TestBeyondQA\\OnClicTest\\bikeboard-robot\\robot\\resources\\mocks\\ads.js"}
+{"level":30,"time":"2026-01-15T15:35:13.501Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Adding 1 keywords from JS Extension"}
+{"level":30,"time":"2026-01-15T15:35:13.502Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method initializeExtension"}
+{"level":30,"time":"2026-01-15T15:35:13.566Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:13.566Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:13.568Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:13.568Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:13.571Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-01-15T15:35:13.663Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Adding browser to stack: chromium, version: 143.0.7499.4"}
+{"level":30,"time":"2026-01-15T15:35:13.663Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-01-15T15:35:13.663Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-01-15T15:35:13.670Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method newContext"}
+{"level":30,"time":"2026-01-15T15:35:13.670Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":1080,\"width\":1920}}"}
+{"level":30,"time":"2026-01-15T15:35:13.670Z","pid":23172,"hostname":"GLAUCIOPC","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@aca23d87537c0b970d4a4ef5e65ebe6b\"},\"headless\":true,\"_contextStack\":[],\"id\":\"browser=b0cce2d6-a4ed-4e16-a24e-a992d6685431\"}"}
+{"level":30,"time":"2026-01-15T15:35:13.670Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Trace file: "}
+{"level":30,"time":"2026-01-15T15:35:13.678Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Setting default timeout for context context=acbdd4d3-f1f3-4bf9-8f34-b1ac8b4ee040 to 10000"}
+{"level":30,"time":"2026-01-15T15:35:13.678Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active context: context=acbdd4d3-f1f3-4bf9-8f34-b1ac8b4ee040"}
+{"level":30,"time":"2026-01-15T15:35:13.678Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method newContext"}
+{"level":30,"time":"2026-01-15T15:35:13.682Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-01-15T15:35:13.682Z","pid":23172,"hostname":"GLAUCIOPC","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@aca23d87537c0b970d4a4ef5e65ebe6b\"},\"headless\":true,\"_contextStack\":[{\"id\":\"context=acbdd4d3-f1f3-4bf9-8f34-b1ac8b4ee040\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@87c72e6e3bbbe1c189cfe3855590f047\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":1080,\"width\":1920}},\"traceFile\":\"\"}],\"id\":\"browser=b0cce2d6-a4ed-4e16-a24e-a992d6685431\"}"}
+{"level":30,"time":"2026-01-15T15:35:13.738Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Video path: undefined"}
+{"level":30,"time":"2026-01-15T15:35:13.738Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active page"}
+{"level":30,"time":"2026-01-15T15:35:13.952Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method newPage"}
+{"level":30,"time":"2026-01-15T15:35:14.106Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-15T15:35:14.106Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with a >> text=Anunciar Grátis in page."}
+{"level":30,"time":"2026-01-15T15:35:14.256Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method click"}
+{"level":30,"time":"2026-01-15T15:35:14.260Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:14.261Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with h3 >> text=Anunciar Bicicleta in page."}
+{"level":30,"time":"2026-01-15T15:35:14.265Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:14.269Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:14.269Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Título do Anúncio *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:14.318Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:14.320Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:14.320Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Descrição Detalhada *\") >> .. >> textarea in page."}
+{"level":30,"time":"2026-01-15T15:35:14.335Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:14.337Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method selectOption"}
+{"level":30,"time":"2026-01-15T15:35:14.337Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with select in page."}
+{"level":30,"time":"2026-01-15T15:35:14.366Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Option entries: 21"}
+{"level":30,"time":"2026-01-15T15:35:14.366Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Selected entries: 1"}
+{"level":30,"time":"2026-01-15T15:35:14.366Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method selectOption"}
+{"level":30,"time":"2026-01-15T15:35:14.369Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:14.369Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Modelo *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:14.379Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:14.382Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:14.382Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Preço (R$) *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:14.412Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:14.415Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:14.415Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Ano de Fabricação *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:14.423Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:14.426Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:14.426Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Seu Nome *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:14.436Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:14.439Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:14.439Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"WhatsApp *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:14.449Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:14.452Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-15T15:35:14.452Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with button >> text=Publicar Anúncio in page."}
+{"level":30,"time":"2026-01-15T15:35:14.502Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method click"}
+{"level":30,"time":"2026-01-15T15:35:14.505Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:14.505Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with h3 >> text=Anúncio Enviado com Sucesso! in page."}
+{"level":30,"time":"2026-01-15T15:35:14.548Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:14.550Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:14.551Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with text=Obrigado por escolher o BikeBoard para anunciar sua bicicleta in page."}
+{"level":30,"time":"2026-01-15T15:35:14.553Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:14.557Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:14.557Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with text=Seu anúncio foi enviado para nossa equipe de moderação in page."}
+{"level":30,"time":"2026-01-15T15:35:14.560Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:14.565Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-01-15T15:35:14.566Z","pid":23172,"hostname":"GLAUCIOPC","Take screenshot with options: ":{"path":"C:\\TestBeyondQA\\OnClicTest\\bikeboard-robot\\logs\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-01-15T15:35:14.681Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-01-15T15:35:14.684Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:14.685Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:14.686Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2026-01-15T15:35:14.686Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2026-01-15T15:35:14.687Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:14.688Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:14.689Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:14.690Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:14.691Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changing current active page: page=f452871f-e1b6-4411-acb0-8df01367e667"}
+{"level":30,"time":"2026-01-15T15:35:14.691Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active page"}
+{"level":30,"time":"2026-01-15T15:35:14.693Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:14.695Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:14.696Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active context: context=acbdd4d3-f1f3-4bf9-8f34-b1ac8b4ee040"}
+{"level":30,"time":"2026-01-15T15:35:14.696Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changing current active page: page=f452871f-e1b6-4411-acb0-8df01367e667"}
+{"level":30,"time":"2026-01-15T15:35:14.696Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active page"}
+{"level":30,"time":"2026-01-15T15:35:14.697Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method closeContext"}
+{"level":30,"time":"2026-01-15T15:35:14.703Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Removed page=9f3640f8-7557-4a47-9ee3-0e0d96193016 from context=acbdd4d3-f1f3-4bf9-8f34-b1ac8b4ee040 page stack"}
+{"level":30,"time":"2026-01-15T15:35:14.713Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method closeContext"}
+{"level":30,"time":"2026-01-15T15:35:14.717Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:14.717Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:14.718Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:14.718Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:14.720Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2026-01-15T15:35:14.720Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2026-01-15T15:35:14.722Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method newContext"}
+{"level":30,"time":"2026-01-15T15:35:14.722Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":1080,\"width\":1920}}"}
+{"level":30,"time":"2026-01-15T15:35:14.722Z","pid":23172,"hostname":"GLAUCIOPC","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@aca23d87537c0b970d4a4ef5e65ebe6b\"},\"headless\":true,\"_contextStack\":[],\"id\":\"browser=b0cce2d6-a4ed-4e16-a24e-a992d6685431\"}"}
+{"level":30,"time":"2026-01-15T15:35:14.722Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Trace file: "}
+{"level":30,"time":"2026-01-15T15:35:14.725Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Setting default timeout for context context=9e2a51d5-acb2-4ff5-bf24-4b7bd839e177 to 10000"}
+{"level":30,"time":"2026-01-15T15:35:14.725Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active context: context=9e2a51d5-acb2-4ff5-bf24-4b7bd839e177"}
+{"level":30,"time":"2026-01-15T15:35:14.725Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method newContext"}
+{"level":30,"time":"2026-01-15T15:35:14.727Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-01-15T15:35:14.727Z","pid":23172,"hostname":"GLAUCIOPC","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@aca23d87537c0b970d4a4ef5e65ebe6b\"},\"headless\":true,\"_contextStack\":[{\"id\":\"context=9e2a51d5-acb2-4ff5-bf24-4b7bd839e177\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@af1241147b622dbf5006e0e79c7114c5\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":1080,\"width\":1920}},\"traceFile\":\"\"}],\"id\":\"browser=b0cce2d6-a4ed-4e16-a24e-a992d6685431\"}"}
+{"level":30,"time":"2026-01-15T15:35:14.825Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Video path: undefined"}
+{"level":30,"time":"2026-01-15T15:35:14.825Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active page"}
+{"level":30,"time":"2026-01-15T15:35:14.866Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method newPage"}
+{"level":30,"time":"2026-01-15T15:35:14.913Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-15T15:35:14.913Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with a >> text=Anunciar Grátis in page."}
+{"level":30,"time":"2026-01-15T15:35:14.988Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method click"}
+{"level":30,"time":"2026-01-15T15:35:14.992Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:14.992Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with h3 >> text=Anunciar Bicicleta in page."}
+{"level":30,"time":"2026-01-15T15:35:14.995Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:14.998Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-15T15:35:14.998Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with button >> text=Publicar Anúncio in page."}
+{"level":30,"time":"2026-01-15T15:35:15.038Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method click"}
+{"level":30,"time":"2026-01-15T15:35:15.042Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:15.043Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with text=Título deve ter pelo menos 10 caracteres in page."}
+{"level":30,"time":"2026-01-15T15:35:15.046Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:15.048Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:15.049Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with text=Descrição deve ter pelo menos 30 caracteres in page."}
+{"level":30,"time":"2026-01-15T15:35:15.052Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:15.054Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:15.054Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with text=Marca é obrigatória in page."}
+{"level":30,"time":"2026-01-15T15:35:15.057Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:15.060Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:15.061Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with text=Modelo é obrigatório in page."}
+{"level":30,"time":"2026-01-15T15:35:15.063Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:15.066Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:15.066Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with text=Preço mínimo é R$ 100 in page."}
+{"level":30,"time":"2026-01-15T15:35:15.069Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:15.071Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:15.071Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with text=Nome é obrigatório in page."}
+{"level":30,"time":"2026-01-15T15:35:15.074Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:15.078Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:15.078Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with text=WhatsApp inválido (formato: 11999999999) in page."}
+{"level":30,"time":"2026-01-15T15:35:15.080Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:15.084Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-01-15T15:35:15.084Z","pid":23172,"hostname":"GLAUCIOPC","Take screenshot with options: ":{"path":"C:\\TestBeyondQA\\OnClicTest\\bikeboard-robot\\logs\\browser\\screenshot\\robotframework-browser-screenshot-2.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-01-15T15:35:15.171Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-01-15T15:35:15.173Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:15.174Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:15.175Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2026-01-15T15:35:15.176Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2026-01-15T15:35:15.177Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:15.177Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:15.178Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:15.179Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:15.180Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changing current active page: page=12c81dd8-77b8-48b9-b61b-6dec475ccda7"}
+{"level":30,"time":"2026-01-15T15:35:15.180Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active page"}
+{"level":30,"time":"2026-01-15T15:35:15.181Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:15.182Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:15.182Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active context: context=9e2a51d5-acb2-4ff5-bf24-4b7bd839e177"}
+{"level":30,"time":"2026-01-15T15:35:15.182Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changing current active page: page=12c81dd8-77b8-48b9-b61b-6dec475ccda7"}
+{"level":30,"time":"2026-01-15T15:35:15.182Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active page"}
+{"level":30,"time":"2026-01-15T15:35:15.183Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method closeContext"}
+{"level":30,"time":"2026-01-15T15:35:15.185Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Removed page=0379b786-d7bf-451a-9197-c847fab07538 from context=9e2a51d5-acb2-4ff5-bf24-4b7bd839e177 page stack"}
+{"level":30,"time":"2026-01-15T15:35:15.187Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method closeContext"}
+{"level":30,"time":"2026-01-15T15:35:15.189Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:15.189Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:15.191Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:15.191Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:15.192Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2026-01-15T15:35:15.192Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2026-01-15T15:35:15.194Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method newContext"}
+{"level":30,"time":"2026-01-15T15:35:15.194Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":1080,\"width\":1920}}"}
+{"level":30,"time":"2026-01-15T15:35:15.194Z","pid":23172,"hostname":"GLAUCIOPC","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@aca23d87537c0b970d4a4ef5e65ebe6b\"},\"headless\":true,\"_contextStack\":[],\"id\":\"browser=b0cce2d6-a4ed-4e16-a24e-a992d6685431\"}"}
+{"level":30,"time":"2026-01-15T15:35:15.194Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Trace file: "}
+{"level":30,"time":"2026-01-15T15:35:15.196Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Setting default timeout for context context=60598efc-9e9a-407b-80fd-405fb6060fae to 10000"}
+{"level":30,"time":"2026-01-15T15:35:15.196Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active context: context=60598efc-9e9a-407b-80fd-405fb6060fae"}
+{"level":30,"time":"2026-01-15T15:35:15.196Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method newContext"}
+{"level":30,"time":"2026-01-15T15:35:15.198Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-01-15T15:35:15.198Z","pid":23172,"hostname":"GLAUCIOPC","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@aca23d87537c0b970d4a4ef5e65ebe6b\"},\"headless\":true,\"_contextStack\":[{\"id\":\"context=60598efc-9e9a-407b-80fd-405fb6060fae\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@f97d0aecad639de296197e67b032a2bb\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":1080,\"width\":1920}},\"traceFile\":\"\"}],\"id\":\"browser=b0cce2d6-a4ed-4e16-a24e-a992d6685431\"}"}
+{"level":30,"time":"2026-01-15T15:35:15.240Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Video path: undefined"}
+{"level":30,"time":"2026-01-15T15:35:15.240Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active page"}
+{"level":30,"time":"2026-01-15T15:35:15.274Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method newPage"}
+{"level":30,"time":"2026-01-15T15:35:15.312Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-15T15:35:15.312Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with a >> text=Anunciar Grátis in page."}
+{"level":30,"time":"2026-01-15T15:35:15.386Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method click"}
+{"level":30,"time":"2026-01-15T15:35:15.388Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:15.388Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with h3 >> text=Anunciar Bicicleta in page."}
+{"level":30,"time":"2026-01-15T15:35:15.390Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:15.393Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:15.393Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Título do Anúncio *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:15.403Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:15.405Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:15.405Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Descrição Detalhada *\") >> .. >> textarea in page."}
+{"level":30,"time":"2026-01-15T15:35:15.416Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:15.418Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method selectOption"}
+{"level":30,"time":"2026-01-15T15:35:15.418Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with select in page."}
+{"level":30,"time":"2026-01-15T15:35:15.443Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Option entries: 21"}
+{"level":30,"time":"2026-01-15T15:35:15.443Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Selected entries: 1"}
+{"level":30,"time":"2026-01-15T15:35:15.443Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method selectOption"}
+{"level":30,"time":"2026-01-15T15:35:15.445Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:15.445Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Modelo *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:15.455Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:15.457Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:15.457Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Preço (R$) *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:15.474Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:15.476Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:15.477Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Ano de Fabricação *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:15.482Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:15.484Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:15.484Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Seu Nome *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:15.491Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:15.493Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:15.494Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"WhatsApp *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:15.502Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:15.505Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-15T15:35:15.505Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with button >> text=Publicar Anúncio in page."}
+{"level":30,"time":"2026-01-15T15:35:15.547Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method click"}
+{"level":30,"time":"2026-01-15T15:35:15.549Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:15.549Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with text=WhatsApp inválido (formato: 11999999999) in page."}
+{"level":30,"time":"2026-01-15T15:35:15.551Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:15.554Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-01-15T15:35:15.554Z","pid":23172,"hostname":"GLAUCIOPC","Take screenshot with options: ":{"path":"C:\\TestBeyondQA\\OnClicTest\\bikeboard-robot\\logs\\browser\\screenshot\\robotframework-browser-screenshot-3.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-01-15T15:35:15.653Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-01-15T15:35:15.655Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:15.657Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:15.658Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2026-01-15T15:35:15.659Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2026-01-15T15:35:15.660Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:15.660Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:15.661Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:15.662Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:15.663Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changing current active page: page=b8dc2027-1b60-466f-a1bb-47612338af83"}
+{"level":30,"time":"2026-01-15T15:35:15.663Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active page"}
+{"level":30,"time":"2026-01-15T15:35:15.665Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:15.666Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:15.667Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active context: context=60598efc-9e9a-407b-80fd-405fb6060fae"}
+{"level":30,"time":"2026-01-15T15:35:15.667Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changing current active page: page=b8dc2027-1b60-466f-a1bb-47612338af83"}
+{"level":30,"time":"2026-01-15T15:35:15.667Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active page"}
+{"level":30,"time":"2026-01-15T15:35:15.668Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method closeContext"}
+{"level":30,"time":"2026-01-15T15:35:15.670Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Removed page=d4bf26f4-123a-408f-bbf2-7c100b6e96b4 from context=60598efc-9e9a-407b-80fd-405fb6060fae page stack"}
+{"level":30,"time":"2026-01-15T15:35:15.671Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method closeContext"}
+{"level":30,"time":"2026-01-15T15:35:15.674Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:15.674Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:15.675Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:15.675Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:15.677Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2026-01-15T15:35:15.677Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2026-01-15T15:35:15.679Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method newContext"}
+{"level":30,"time":"2026-01-15T15:35:15.679Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":1080,\"width\":1920}}"}
+{"level":30,"time":"2026-01-15T15:35:15.679Z","pid":23172,"hostname":"GLAUCIOPC","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@aca23d87537c0b970d4a4ef5e65ebe6b\"},\"headless\":true,\"_contextStack\":[],\"id\":\"browser=b0cce2d6-a4ed-4e16-a24e-a992d6685431\"}"}
+{"level":30,"time":"2026-01-15T15:35:15.679Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Trace file: "}
+{"level":30,"time":"2026-01-15T15:35:15.682Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Setting default timeout for context context=12d59bba-4ae7-413a-832d-21e9af3a7b4d to 10000"}
+{"level":30,"time":"2026-01-15T15:35:15.682Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active context: context=12d59bba-4ae7-413a-832d-21e9af3a7b4d"}
+{"level":30,"time":"2026-01-15T15:35:15.682Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method newContext"}
+{"level":30,"time":"2026-01-15T15:35:15.684Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-01-15T15:35:15.684Z","pid":23172,"hostname":"GLAUCIOPC","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@aca23d87537c0b970d4a4ef5e65ebe6b\"},\"headless\":true,\"_contextStack\":[{\"id\":\"context=12d59bba-4ae7-413a-832d-21e9af3a7b4d\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@ed6f6a218b4eef0ec968a79d07219a41\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":1080,\"width\":1920}},\"traceFile\":\"\"}],\"id\":\"browser=b0cce2d6-a4ed-4e16-a24e-a992d6685431\"}"}
+{"level":30,"time":"2026-01-15T15:35:15.733Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Video path: undefined"}
+{"level":30,"time":"2026-01-15T15:35:15.733Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active page"}
+{"level":30,"time":"2026-01-15T15:35:15.770Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method newPage"}
+{"level":30,"time":"2026-01-15T15:35:15.810Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-15T15:35:15.810Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with a >> text=Anunciar Grátis in page."}
+{"level":30,"time":"2026-01-15T15:35:15.888Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method click"}
+{"level":30,"time":"2026-01-15T15:35:15.890Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:15.890Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with h3 >> text=Anunciar Bicicleta in page."}
+{"level":30,"time":"2026-01-15T15:35:15.893Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:15.897Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:15.897Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Título do Anúncio *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:15.909Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:15.913Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:15.913Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Descrição Detalhada *\") >> .. >> textarea in page."}
+{"level":30,"time":"2026-01-15T15:35:15.931Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:15.933Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method selectOption"}
+{"level":30,"time":"2026-01-15T15:35:15.933Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with select in page."}
+{"level":30,"time":"2026-01-15T15:35:15.954Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Option entries: 21"}
+{"level":30,"time":"2026-01-15T15:35:15.954Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Selected entries: 1"}
+{"level":30,"time":"2026-01-15T15:35:15.954Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method selectOption"}
+{"level":30,"time":"2026-01-15T15:35:15.958Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:15.958Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Modelo *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:15.967Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:15.970Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:15.970Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Preço (R$) *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:15.987Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:15.989Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:15.989Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Ano de Fabricação *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:15.996Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:15.998Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:15.998Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Seu Nome *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:16.004Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.006Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.006Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"WhatsApp *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:16.014Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.017Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-15T15:35:16.017Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with button >> text=Publicar Anúncio in page."}
+{"level":30,"time":"2026-01-15T15:35:16.047Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method click"}
+{"level":30,"time":"2026-01-15T15:35:16.049Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:16.049Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with text=WhatsApp deve ter 10 ou 11 dígitos in page."}
+{"level":30,"time":"2026-01-15T15:35:16.052Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:16.055Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-01-15T15:35:16.055Z","pid":23172,"hostname":"GLAUCIOPC","Take screenshot with options: ":{"path":"C:\\TestBeyondQA\\OnClicTest\\bikeboard-robot\\logs\\browser\\screenshot\\robotframework-browser-screenshot-4.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-01-15T15:35:16.149Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-01-15T15:35:16.151Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:16.152Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:16.153Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2026-01-15T15:35:16.153Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2026-01-15T15:35:16.154Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:16.155Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:16.156Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:16.157Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:16.158Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changing current active page: page=2a89dda8-8cfc-44bd-a018-059f9c4262a6"}
+{"level":30,"time":"2026-01-15T15:35:16.158Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active page"}
+{"level":30,"time":"2026-01-15T15:35:16.159Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:16.160Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:16.161Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active context: context=12d59bba-4ae7-413a-832d-21e9af3a7b4d"}
+{"level":30,"time":"2026-01-15T15:35:16.161Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changing current active page: page=2a89dda8-8cfc-44bd-a018-059f9c4262a6"}
+{"level":30,"time":"2026-01-15T15:35:16.161Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active page"}
+{"level":30,"time":"2026-01-15T15:35:16.162Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method closeContext"}
+{"level":30,"time":"2026-01-15T15:35:16.163Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Removed page=4574bcf3-7c14-4cf3-bfb5-78af61f944bf from context=12d59bba-4ae7-413a-832d-21e9af3a7b4d page stack"}
+{"level":30,"time":"2026-01-15T15:35:16.164Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method closeContext"}
+{"level":30,"time":"2026-01-15T15:35:16.167Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:16.167Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:16.168Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:16.168Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:16.170Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2026-01-15T15:35:16.170Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2026-01-15T15:35:16.171Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method newContext"}
+{"level":30,"time":"2026-01-15T15:35:16.171Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":1080,\"width\":1920}}"}
+{"level":30,"time":"2026-01-15T15:35:16.171Z","pid":23172,"hostname":"GLAUCIOPC","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@aca23d87537c0b970d4a4ef5e65ebe6b\"},\"headless\":true,\"_contextStack\":[],\"id\":\"browser=b0cce2d6-a4ed-4e16-a24e-a992d6685431\"}"}
+{"level":30,"time":"2026-01-15T15:35:16.171Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Trace file: "}
+{"level":30,"time":"2026-01-15T15:35:16.174Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Setting default timeout for context context=9f575d62-4ba3-4ccb-8914-3ec978bd2ab1 to 10000"}
+{"level":30,"time":"2026-01-15T15:35:16.174Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active context: context=9f575d62-4ba3-4ccb-8914-3ec978bd2ab1"}
+{"level":30,"time":"2026-01-15T15:35:16.174Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method newContext"}
+{"level":30,"time":"2026-01-15T15:35:16.176Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-01-15T15:35:16.176Z","pid":23172,"hostname":"GLAUCIOPC","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@aca23d87537c0b970d4a4ef5e65ebe6b\"},\"headless\":true,\"_contextStack\":[{\"id\":\"context=9f575d62-4ba3-4ccb-8914-3ec978bd2ab1\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@091ae320f859ff9ebdf3e212711e74e9\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":1080,\"width\":1920}},\"traceFile\":\"\"}],\"id\":\"browser=b0cce2d6-a4ed-4e16-a24e-a992d6685431\"}"}
+{"level":30,"time":"2026-01-15T15:35:16.221Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Video path: undefined"}
+{"level":30,"time":"2026-01-15T15:35:16.221Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active page"}
+{"level":30,"time":"2026-01-15T15:35:16.260Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method newPage"}
+{"level":30,"time":"2026-01-15T15:35:16.298Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-15T15:35:16.298Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with a >> text=Anunciar Grátis in page."}
+{"level":30,"time":"2026-01-15T15:35:16.375Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method click"}
+{"level":30,"time":"2026-01-15T15:35:16.377Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:16.377Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with h3 >> text=Anunciar Bicicleta in page."}
+{"level":30,"time":"2026-01-15T15:35:16.381Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:16.384Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.384Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Título do Anúncio *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:16.397Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.400Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.400Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Descrição Detalhada *\") >> .. >> textarea in page."}
+{"level":30,"time":"2026-01-15T15:35:16.414Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.417Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method selectOption"}
+{"level":30,"time":"2026-01-15T15:35:16.417Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with select in page."}
+{"level":30,"time":"2026-01-15T15:35:16.441Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Option entries: 21"}
+{"level":30,"time":"2026-01-15T15:35:16.441Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Selected entries: 1"}
+{"level":30,"time":"2026-01-15T15:35:16.441Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method selectOption"}
+{"level":30,"time":"2026-01-15T15:35:16.443Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.443Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Modelo *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:16.453Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.456Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.456Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Preço (R$) *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:16.474Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.477Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.477Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Ano de Fabricação *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:16.484Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.487Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.487Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Seu Nome *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:16.494Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.497Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.497Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"WhatsApp *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:16.506Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.509Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-15T15:35:16.509Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with button >> text=Publicar Anúncio in page."}
+{"level":30,"time":"2026-01-15T15:35:16.548Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method click"}
+{"level":30,"time":"2026-01-15T15:35:16.550Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:16.550Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with text=Descrição deve ter pelo menos 30 caracteres in page."}
+{"level":30,"time":"2026-01-15T15:35:16.552Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:16.556Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-01-15T15:35:16.556Z","pid":23172,"hostname":"GLAUCIOPC","Take screenshot with options: ":{"path":"C:\\TestBeyondQA\\OnClicTest\\bikeboard-robot\\logs\\browser\\screenshot\\robotframework-browser-screenshot-5.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-01-15T15:35:16.652Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-01-15T15:35:16.654Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:16.655Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:16.656Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2026-01-15T15:35:16.656Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2026-01-15T15:35:16.658Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:16.659Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:16.660Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:16.660Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:16.661Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changing current active page: page=0ee6f36f-3b33-4729-b9c8-04ee2d21f6ce"}
+{"level":30,"time":"2026-01-15T15:35:16.661Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active page"}
+{"level":30,"time":"2026-01-15T15:35:16.662Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:16.663Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:16.664Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active context: context=9f575d62-4ba3-4ccb-8914-3ec978bd2ab1"}
+{"level":30,"time":"2026-01-15T15:35:16.664Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changing current active page: page=0ee6f36f-3b33-4729-b9c8-04ee2d21f6ce"}
+{"level":30,"time":"2026-01-15T15:35:16.664Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active page"}
+{"level":30,"time":"2026-01-15T15:35:16.665Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method closeContext"}
+{"level":30,"time":"2026-01-15T15:35:16.666Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Removed page=48e308e6-b850-4444-a99c-65deba5015d6 from context=9f575d62-4ba3-4ccb-8914-3ec978bd2ab1 page stack"}
+{"level":30,"time":"2026-01-15T15:35:16.668Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method closeContext"}
+{"level":30,"time":"2026-01-15T15:35:16.670Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:16.670Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:16.671Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:16.671Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:16.673Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2026-01-15T15:35:16.673Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2026-01-15T15:35:16.675Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method newContext"}
+{"level":30,"time":"2026-01-15T15:35:16.675Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":1080,\"width\":1920}}"}
+{"level":30,"time":"2026-01-15T15:35:16.675Z","pid":23172,"hostname":"GLAUCIOPC","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@aca23d87537c0b970d4a4ef5e65ebe6b\"},\"headless\":true,\"_contextStack\":[],\"id\":\"browser=b0cce2d6-a4ed-4e16-a24e-a992d6685431\"}"}
+{"level":30,"time":"2026-01-15T15:35:16.675Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Trace file: "}
+{"level":30,"time":"2026-01-15T15:35:16.677Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Setting default timeout for context context=573679fb-65be-4bce-88fe-6a2855a99fff to 10000"}
+{"level":30,"time":"2026-01-15T15:35:16.677Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active context: context=573679fb-65be-4bce-88fe-6a2855a99fff"}
+{"level":30,"time":"2026-01-15T15:35:16.677Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method newContext"}
+{"level":30,"time":"2026-01-15T15:35:16.679Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-01-15T15:35:16.679Z","pid":23172,"hostname":"GLAUCIOPC","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@aca23d87537c0b970d4a4ef5e65ebe6b\"},\"headless\":true,\"_contextStack\":[{\"id\":\"context=573679fb-65be-4bce-88fe-6a2855a99fff\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@67f8b7771e9791f0cb4f31dc60029266\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"height\":1080,\"width\":1920}},\"traceFile\":\"\"}],\"id\":\"browser=b0cce2d6-a4ed-4e16-a24e-a992d6685431\"}"}
+{"level":30,"time":"2026-01-15T15:35:16.723Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Video path: undefined"}
+{"level":30,"time":"2026-01-15T15:35:16.723Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active page"}
+{"level":30,"time":"2026-01-15T15:35:16.758Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method newPage"}
+{"level":30,"time":"2026-01-15T15:35:16.797Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-15T15:35:16.797Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with a >> text=Anunciar Grátis in page."}
+{"level":30,"time":"2026-01-15T15:35:16.885Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method click"}
+{"level":30,"time":"2026-01-15T15:35:16.888Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:16.888Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with h3 >> text=Anunciar Bicicleta in page."}
+{"level":30,"time":"2026-01-15T15:35:16.891Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:16.895Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.895Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Título do Anúncio *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:16.907Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.911Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.911Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Descrição Detalhada *\") >> .. >> textarea in page."}
+{"level":30,"time":"2026-01-15T15:35:16.921Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.924Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method selectOption"}
+{"level":30,"time":"2026-01-15T15:35:16.924Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with select in page."}
+{"level":30,"time":"2026-01-15T15:35:16.945Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Option entries: 21"}
+{"level":30,"time":"2026-01-15T15:35:16.945Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Selected entries: 1"}
+{"level":30,"time":"2026-01-15T15:35:16.945Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method selectOption"}
+{"level":30,"time":"2026-01-15T15:35:16.948Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.948Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Modelo *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:16.957Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.960Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.960Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Preço (R$) *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:16.978Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.981Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.981Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Ano de Fabricação *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:16.989Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.992Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:16.992Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"Seu Nome *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:16.999Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:17.001Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:17.001Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with label:has-text(\"WhatsApp *\") >> .. >> input in page."}
+{"level":30,"time":"2026-01-15T15:35:17.010Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method fillText"}
+{"level":30,"time":"2026-01-15T15:35:17.013Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method click"}
+{"level":30,"time":"2026-01-15T15:35:17.013Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with button >> text=Publicar Anúncio in page."}
+{"level":30,"time":"2026-01-15T15:35:17.048Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method click"}
+{"level":30,"time":"2026-01-15T15:35:17.051Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:17.051Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Strict mode is enabled, find Locator with text=Preço mínimo é R$ 100 in page."}
+{"level":30,"time":"2026-01-15T15:35:17.053Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-01-15T15:35:17.058Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-01-15T15:35:17.058Z","pid":23172,"hostname":"GLAUCIOPC","Take screenshot with options: ":{"path":"C:\\TestBeyondQA\\OnClicTest\\bikeboard-robot\\logs\\browser\\screenshot\\robotframework-browser-screenshot-6.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-01-15T15:35:17.151Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-01-15T15:35:17.153Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:17.154Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:17.155Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2026-01-15T15:35:17.155Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2026-01-15T15:35:17.156Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:17.157Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:17.159Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:17.160Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:17.160Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changing current active page: page=883506af-8fce-4766-a420-0797098bdc77"}
+{"level":30,"time":"2026-01-15T15:35:17.160Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active page"}
+{"level":30,"time":"2026-01-15T15:35:17.162Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:17.163Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:17.163Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active context: context=573679fb-65be-4bce-88fe-6a2855a99fff"}
+{"level":30,"time":"2026-01-15T15:35:17.163Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changing current active page: page=883506af-8fce-4766-a420-0797098bdc77"}
+{"level":30,"time":"2026-01-15T15:35:17.164Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Changed active page"}
+{"level":30,"time":"2026-01-15T15:35:17.165Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method closeContext"}
+{"level":30,"time":"2026-01-15T15:35:17.166Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Removed page=71c7468e-5829-43cb-b676-809e6b804336 from context=573679fb-65be-4bce-88fe-6a2855a99fff page stack"}
+{"level":30,"time":"2026-01-15T15:35:17.167Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method closeContext"}
+{"level":30,"time":"2026-01-15T15:35:17.170Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:17.170Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:17.172Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:17.172Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-15T15:35:17.226Z","pid":23172,"hostname":"GLAUCIOPC","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-01-15T15:35:17.309Z","pid":23172,"hostname":"GLAUCIOPC","msg":"End of node method closeAllBrowsers"}
