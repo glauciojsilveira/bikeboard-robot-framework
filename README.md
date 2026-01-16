@@ -2,10 +2,13 @@
 
 ## Descrição
 Este projeto é uma plataforma de classificados para compra e venda de bicicletas, utilizando Robot Framework para testes automatizados, integração contínua com GitHub Actions e suporte ao Model Context Protocol (MCP) para extensões e automação.
+No git action você pode escolher qual o navegador para testes ou o ambiente
+- local [host](http://localhost:3000) e homolog https://bikeboard-homolog.vercel.app
+- 
 
 ## Pré-requisitos
-- Node.js (versão 14 ou superior)
-- Python (versão 3.8 ou superior)
+- Node.js (versão 22 ou superior)
+- Python (versão 3.14 ou superior)
 - Git
 - Navegador Chromium (instalado automaticamente pelo robotframework-browser)
 
